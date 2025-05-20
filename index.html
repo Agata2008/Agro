@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="cabecalho">
+        <h1>Bem-vindo ao Meu Site</h1>
+        <button onclick="mudarCorCabecalho()">Mudar Cor do Cabeçalho</button>
+    </header>
+
+    <main>
+        <div class="texto">
+            <h2>Sobre o site</h2>
+            <p>Este é um exemplo de site simples feito com HTML e CSS. Aqui temos uma área de texto explicando o propósito da página.</p>
+        </div>
+
+        <div class="imagem">
+            <img src="https://via.placeholder.com/600x300" alt="Imagem Exemplo" width="100%">
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2025 - Todos os direitos reservados.
+    </footer>
+
+    <script>
+        function mudarCorCabecalho() {
+            const cabecalho = document.getElementById('cabecalho');
+            const cores = ['#4CAF50', '#2196F3', '#FF5722', '#9C27B0', '#3F51B5'];
+            const corAtual = window.getComputedStyle(cabecalho).backgroundColor;
+            let novaCor = cores[Math.floor(Math.random() * cores.length)];
+
+            while (novaCor === corAtual) {
+                novaCor = cores[Math.floor(Math.random() * cores.length)];
+            }
+
+            cabecalho.style.backgroundColor = novaCor;
+        }
+    </script>
+
+</body>
+</html>
