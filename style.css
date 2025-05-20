@@ -2,10 +2,11 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #7ab487;
 }
 
 header {
-    background-color: #3d5e3e;
+    background-color: #335334;
     color: white;
     padding: 20px;
     text-align: center;
@@ -28,16 +29,8 @@ main {
 .texto {
     max-width: 600px;
     text-align: justify;
-    color:#131d13
+    color:#444e46
 }
-
-h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
-    color:#102b10
-}
-
 
 .imagem {
     max-width: 100%;
