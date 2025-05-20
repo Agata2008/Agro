@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a href="#" class="btn-topo" id="btnTopo" title="Voltar ao topo">⬆️</a>
+
 
     <header id="cabecalho">
         <h1>Bem-vindo ao Meu Site</h1>
-        <button onclick="mudarCorCabecalho()">Mudar Cor do Cabeçalho</button>
     </header>
 
     <main>
@@ -24,8 +25,20 @@
         </div>
     </main>
 
+<script>
+    window.onscroll = function () {
+        const btn = document.getElementById("btnTopo");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    };
+</script>
+
+
     <footer>
-        &copy; 2025 - Todos os direitos reservados.
+        Desenvolvido por Ágata Ferreira da Costa, 3F. 2025 - Todos os direitos reservados.
     </footer>
 
     <script>
