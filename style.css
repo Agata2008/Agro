@@ -36,7 +36,6 @@ main {
     max-width: 100%;
   height: auto;    
   object-fit: cover;
-  display: flex;
 }
 
 footer {
@@ -48,7 +47,6 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    display: flex;
 }
 
 
