@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #b0e9bc;
+    background-color: #bae7c4;
 }
 
 header {
@@ -45,7 +45,7 @@ footer {
     padding: 20px;
     margin: 0;
     position: relative;
-    bottom: 0;
+    bottom: 10;
     width: 100%;
 }
 
