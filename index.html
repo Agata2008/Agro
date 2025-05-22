@@ -82,20 +82,5 @@
         Desenvolvido por Ágata Ferreira da Costa, 3F. 2025 - Todos os direitos reservados.
     </footer>
 
-    <script>
-        function mudarCorCabecalho() {
-            const cabecalho = document.getElementById('cabecalho');
-            const cores = ['#4CAF50', '#2196F3', '#FF5722', '#9C27B0', '#3F51B5'];
-            const corAtual = window.getComputedStyle(cabecalho).backgroundColor;
-            let novaCor = cores[Math.floor(Math.random() * cores.length)];
-
-            while (novaCor === corAtual) {
-                novaCor = cores[Math.floor(Math.random() * cores.length)];
-            }
-
-            cabecalho.style.backgroundColor = novaCor;
-        }
-    </script>
-
 </body>
 </html>
